@@ -1,11 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  nombre: MyString
-  nacimiento: 2015-05-22
-  altura: 1.5
+Juan:
+  nombre: Juan Palomo
+  nacimiento: 1970-01-01
+  altura: 1.73
 
-two:
-  nombre: MyString
-  nacimiento: 2015-05-22
-  altura: 1.5
+Pedro:
+  nombre: Pedro Jota
+  nacimiento: 1997-05-22
+  altura: 2
