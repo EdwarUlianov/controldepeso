@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id: 1
+  nombre: MyString
+  nacimiento: 2015-05-22
+  altura: 1.5
+
+two:
+  id: 1
+  nombre: MyString
+  nacimiento: 2015-05-22
+  altura: 1.5
