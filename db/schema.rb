@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150522115229) do
+ActiveRecord::Schema.define(version: 20150523233137) do
 
   create_table "usuarios", force: :cascade do |t|
     t.string   "nombre"
@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(version: 20150522115229) do
     t.float    "altura"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string   "sexo"
   end
 
 end
