@@ -15,5 +15,8 @@
 /log/*.log
 /tmp
 
+# Ficheros de Spring
+/spring/*.pid
+
 # Ficheros temporales de Vim
 *.swp
