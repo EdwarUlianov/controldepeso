@@ -15,3 +15,8 @@ group :development, :test do
   gem 'web-console', '2.0.0.beta3'
   gem 'spring',      '1.1.3'
 end
+
+group :test do
+  gem 'minitest-reporters', '1.0.5'
+  gem 'guard-minitest',     '2.3.1'
+end
