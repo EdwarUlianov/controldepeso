@@ -1,35 +1,35 @@
 <%= form_for :usuario do |f| %>
 
- <p>
-  <%= f.label :nombre %><br>
-  <%= f.text_field :nombre %>
- </p>
- 
- <p>
-  <%= f.label :altura %> en metros<br>
-  <%= f.number_field :altura, :value => 1.60, :step => 0.01 %>
- </p>
- 
- <p>
-  Fecha de <%= f.label :nacimiento %><br>
-  <%= f.date_select :nacimiento, :use_month_names => ['Enero', 'Febrero',
-  'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 
-  'Octubre', 'Noviembre','Diciembre'], order: [:day, :month, :year], 
-  :start_year => Date.current.year, :end_year => 1920 %>
- </p>
- 
- <p>
-  <%= f.label :sexo %><br>
-  <%= f.select :sexo, options_for_select(['Hombre', 'Mujer']) %>
- </p>
- 
- <p>
-  <%= f.label :complexion %><br>
-  <%= f.select :complexion, options_for_select(['Delgada', 'Normal', 'Fuerte']) %>
- </p>
- 
- <p>
-  <%= f.submit "Crear Usuario" %>
- </p>
+  <p>
+    <%= f.label :nombre %><br>
+    <%= f.text_field :nombre %>
+  </p>
+
+  <p>
+    <%= f.label :altura %> en metros<br>
+    <%= f.number_field :altura, :value => 1.60, :step => 0.01 %>
+  </p>
+
+  <p>
+    Fecha de <%= f.label :nacimiento %><br>
+    <%= f.date_select :nacimiento, :use_month_names => ['Enero', 'Febrero',
+                                                        'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre',
+                                                        'Octubre', 'Noviembre','Diciembre'], order: [:day, :month, :year],
+                      :start_year => Date.current.year, :end_year => 1920 %>
+  </p>
+
+  <p>
+    <%= f.label :sexo %><br>
+    <%= f.select :sexo, options_for_select(Usuario::SEXO) %>
+  </p>
+
+  <p>
+    <%= f.label :complexion %><br>
+    <%= f.select :complexion, options_for_select(Usuario::COMPLEXION) %>
+  </p>
+
+  <p>
+    <%= f.submit "Crear Usuario" %>
+  </p>
 
 <% end %>
