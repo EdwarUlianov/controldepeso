@@ -14,7 +14,8 @@
   Fecha de <%= f.label :nacimiento %><br>
   <%= f.date_select :nacimiento, :use_month_names => ['Enero', 'Febrero',
   'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 
-  'Octubre', 'Noviembre','Diciembre'], order: [:day, :month, :year]%>
+  'Octubre', 'Noviembre','Diciembre'], order: [:day, :month, :year], 
+  :start_year => Date.current.year, :end_year => 1920 %>
  </p>
  
  <p>
