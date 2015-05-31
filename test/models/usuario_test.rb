@@ -6,4 +6,8 @@ class UsuarioTest < ActiveSupport::TestCase
     assert usuarios(:valido).valid?
   end
 
+  test 'nombre no puede ser blanco' do
+    assert_not usuarios(:nombre_blank).valid?
+  end
+
 end
