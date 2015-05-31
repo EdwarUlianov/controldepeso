@@ -10,4 +10,9 @@ class UsuarioTest < ActiveSupport::TestCase
     assert_not usuarios(:nombre_blank).valid?
   end
 
+  test 'nombre debe ser único' do
+    duplicado = usuarios(:valido).dup
+    assert_not duplicado.valid?
+  end
+
 end
