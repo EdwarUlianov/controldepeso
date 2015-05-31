@@ -2,18 +2,21 @@ require 'test_helper'
 
 class UsuarioTest < ActiveSupport::TestCase
 
+  def setup
+    @usuario = usuarios(:valido)
+  end
+
   test 'usuario debería ser válido' do
-    assert usuarios(:valido).valid?
+    assert  @usuario.valid?
   end
 
   test 'nombre no puede ser blanco' do
-    no_valido = usuarios(:valido)
-    no_valido.nombre = ' '
-    assert_not no_valido.valid?
+    @usuario.nombre = ' '
+    assert_not @usuario.valid?
   end
 
   test 'nombre debe ser único' do
-    duplicado = usuarios(:valido).dup
+    duplicado = @usuario.dup
     assert_not duplicado.valid?
   end
 
