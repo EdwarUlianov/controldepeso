@@ -7,7 +7,9 @@ class UsuarioTest < ActiveSupport::TestCase
   end
 
   test 'nombre no puede ser blanco' do
-    assert_not usuarios(:nombre_blank).valid?
+    no_valido = usuarios(:valido)
+    no_valido.nombre = ' '
+    assert_not no_valido.valid?
   end
 
   test 'nombre debe ser único' do

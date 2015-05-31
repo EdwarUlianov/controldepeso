@@ -6,10 +6,3 @@ valido:
   altura: 1.73
   sexo: H
   complexion: N
-
-nombre_blank:
-  nombre: '   '
-  nacimiento: 1970-01-01
-  altura: 1.73
-  sexo: H
-  complexion: N
