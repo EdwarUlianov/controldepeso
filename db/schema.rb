@@ -11,9 +11,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150603090358) do
+ActiveRecord::Schema.define(version: 20150603103301) do
 
-  create_table "perfiles", force: :cascade do |t|
+  create_table "perfils", force: :cascade do |t|
     t.string   "nombre"
     t.date     "nacimiento"
     t.float    "altura"
