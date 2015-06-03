@@ -1,4 +1,4 @@
-<h1>USUARIOS</h1>
+<h1>PERFILES</h1>
 
   <table>
     <thead>
@@ -8,11 +8,11 @@
       </tr>
     </thead>
  
-    <% @usuarios.each do |usuario| %>
+    <% @perfiles.each do |perfil| %>
 
       <tr>
-        <td><%= usuario.nombre %></td>
-        <td><%= link_to 'Borrar', usuario, method: :delete,
+        <td><%= perfil.nombre %></td>
+        <td><%= link_to 'Borrar', perfil, method: :delete,
                                      data: { confirm: '¿Estás seguro?' } %></td>
       </tr>
       
