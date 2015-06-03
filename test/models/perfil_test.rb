@@ -3,7 +3,7 @@ require 'test_helper'
 class PerfilTest < ActiveSupport::TestCase
 
   def setup
-    @perfil = perfiles(:valido)
+    @perfil = perfils(:valido)
   end
 
   # Válido
