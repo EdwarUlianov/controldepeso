@@ -24,7 +24,7 @@ class PerfilsController < ApplicationController
   def destroy
 
     @perfil = Perfil.destroy(params[:id])
-    redirect_to perfiles_url
+    redirect_to perfils_url
   end
 
   private
