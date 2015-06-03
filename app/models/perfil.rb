@@ -1,4 +1,4 @@
-class Usuario < ActiveRecord::Base
+class Perfil < ActiveRecord::Base
 
   # Descripciones de los valores del campo 'sexo'
   SEXO = {'Hombre' => 'H',
