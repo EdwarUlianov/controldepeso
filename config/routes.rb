@@ -2,9 +2,6 @@ Rails.application.routes.draw do
   
   root 'welcome#index'
 
-  resources :usuarios
-  
-  
- 
+  resources :perfiles
   
 end
