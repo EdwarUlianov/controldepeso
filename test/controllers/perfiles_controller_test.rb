@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class UsuariosControllerTest < ActionController::TestCase
+class PerfilesControllerTest < ActionController::TestCase
   # test "the truth" do
   #   assert true
   # end
