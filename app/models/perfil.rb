@@ -1,6 +1,5 @@
 class Perfil < ActiveRecord::Base
-
-  # Descripciones de los valores del campo 'sexo'
+   # Descripciones de los valores del campo 'sexo'
   SEXO = {'Hombre' => 'H',
           'Mujer' => 'M'}
   

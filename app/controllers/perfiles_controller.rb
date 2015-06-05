@@ -1,4 +1,4 @@
-class PerfilsController < ApplicationController
+class PerfilesController < ApplicationController
 
   def index
     @perfiles = Perfil.all
@@ -24,7 +24,7 @@ class PerfilsController < ApplicationController
   def destroy
 
     @perfil = Perfil.destroy(params[:id])
-    redirect_to perfils_url
+    redirect_to perfiles_url
   end
 
   private
