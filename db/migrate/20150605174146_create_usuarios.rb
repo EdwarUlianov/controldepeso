@@ -1,9 +1,8 @@
 class CreateUsuarios < ActiveRecord::Migration
   def change
     create_table :usuarios do |t|
-      t.string :nombre
-      t.date :nacimiento
-      t.float :altura
+      t.string :email
+      t.string :password_digest
 
       t.timestamps null: false
     end
