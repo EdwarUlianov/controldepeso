@@ -1,5 +1,5 @@
-class RenameTablePerfilesToPerfils < ActiveRecord::Migration
-  def change
-    rename_table :perfiles, :perfils
-  end
-end
+#class RenameTablePerfilesToPerfils < ActiveRecord::Migration
+#  def change
+#    rename_table :perfiles, :perfils
+#  end
+#end
