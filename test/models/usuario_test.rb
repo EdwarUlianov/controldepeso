@@ -18,7 +18,7 @@ class UsuarioTest < ActiveSupport::TestCase
   end
   
   test 'email no debe ser demasiado largo' do
-    @usuario.email = "a" * 244 + "@ejemplo.es"
+    @usuario.email = "a" * 255 + "@ejemplo.es"
     assert_not @usuario.valid?
   end
   
