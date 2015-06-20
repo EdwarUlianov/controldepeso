@@ -1,5 +1,5 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-valido:
-  email: emailvalido@control.es
-  password_digest: leningrado
+uno:
+ email: emailvalido@gmail.es
+ password_digest: Leningrad0
