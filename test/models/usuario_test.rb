@@ -24,6 +24,8 @@ class UsuarioTest < ActiveSupport::TestCase
   
   test 'email debe ser único' do
     duplicado = @usuario.dup
+    duplicado.email = @usuario.email.upcase
+    @usuario.save
     assert_not duplicado.valid?
   end
 
