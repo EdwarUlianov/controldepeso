@@ -24,6 +24,7 @@ ActiveRecord::Schema.define(version: 20150605174146) do
   end
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   create_table "perfils", force: :cascade do |t|
     t.string   "nombre"
@@ -35,6 +36,8 @@ ActiveRecord::Schema.define(version: 20150605174146) do
     t.string   "complexion"
   end
 
+=======
+>>>>>>> modelo-usuarios
   create_table "usuarios", force: :cascade do |t|
     t.string   "email"
     t.string   "password_digest"
